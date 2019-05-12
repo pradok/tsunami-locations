@@ -1,0 +1,16 @@
+{
+  "name": "GraphQL-server",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Pradosh",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./src/index.js"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.17.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
