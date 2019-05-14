@@ -1,7 +1,9 @@
-const Mutation = require('./Mutation');
 const Query = require('./Query');
+const {PointProps, PointObject, FeatureCollection} = require('./geojson');
 
 module.exports = {
   Query,
-  Mutation
+  PointProps,
+  PointObject,
+  FeatureCollection
 };

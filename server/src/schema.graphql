@@ -1,12 +1,55 @@
 type Message {
-  title: String!
-  body: String!
+    title: String!
+    body: String!
+}
+
+scalar Geometry
+
+type PointProps {
+    title: String,
+    place: String,
+    mag: Float,
+    time: String,
+    updated: String,
+    tz: Int,
+    url: String,
+    detail: String,
+    felt:Int,
+    cdi: Float,
+    mmi: Float,
+    alert: String,
+    status: String,
+    tsunami: Int,
+    sig:Int,
+    net: String,
+    code: String,
+    ids: String,
+    sources: String,
+    types: String,
+    nst: Int,
+    dmin: Float,
+    rms: Float,
+    gap: Float,
+    magType: String,
+    type: String
+}
+type PointObject {
+    type: String!
+    geometry: Geometry
+    properties: PointProps
+}
+scalar MetaData
+scalar Bbox
+
+type FeatureCollection {
+    bbox: Bbox
+    type: String
+    metadata: MetaData
+    features: [PointObject!]!
 }
 
 type Query {
-  messages: [Message!]!
+    messages: [Message!]!
+    earthquake_feed: FeatureCollection!
 }
 
-type Mutation {
-  addMessage(body: String, title: String!): Message
-}

@@ -1,7 +1,9 @@
-const messages = require('../fixtures');
+const {geoJsonData} = require('../fixtures');
 
 const Query = {
-  messages: () => messages
+  earthquake_feed(_, args, ctx) {
+    return geoJsonData;
+  },
 };
 
 module.exports = Query;
