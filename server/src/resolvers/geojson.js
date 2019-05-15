@@ -34,6 +34,12 @@ const resolvers = {
     features({features}) {
       return features
     },
+  },
+
+  Location: {
+    locations(locations) {
+      return locations
+    }
   }
 
 };

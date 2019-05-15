@@ -81,6 +81,54 @@ const geoJsonData = {
   type: "FeatureCollection"
 };
 
+const locations = [
+  'Aguanga',
+  'Alamo',
+  'Allakaket',
+  'Anchorage',
+  'Anchor Point',
+  'Arctic Village',
+  'Borrego Springs',
+  'Big Lake',
+  'Blackwell',
+  'Cantwell',
+  'Chitina',
+  'Clinton',
+  'Cobb',
+  'Coso Junction',
+  'Gastouni',
+  'Fishhook',
+  'Fritz Creek',
+  'Hawthorne',
+  'Honaunau-Napoopoo',
+  'Haines Junction',
+  'Kelseyville',
+  'Kobuk',
+  'Kodiak',
+  'Kokopo',
+  'La Quinta',
+  'Nishinoomote',
+  'Namatanai',
+  'Norwalk',
+  'Ocotillo Wells',
+  'Pine Valley',
+  'Pahala',
+  'Polson',
+  'Redwood Valley',
+  'Talkeetna',
+  'The Geysers',
+  'Toms Place',
+  'Unalakleet',
+  'Valdez',
+  'Volcano',
+  'Yakataga',
+
+
+
+
+];
+
 module.exports = {
-  geoJsonData
+  geoJsonData,
+  locations
 };

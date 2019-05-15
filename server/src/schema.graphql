@@ -51,5 +51,6 @@ type FeatureCollection {
 type Query {
     messages: [Message!]!
     earthquake_feed(place: String): FeatureCollection!
+    locations(startsWith: String): [String]
 }
 
