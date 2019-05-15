@@ -50,6 +50,6 @@ type FeatureCollection {
 
 type Query {
     messages: [Message!]!
-    earthquake_feed: FeatureCollection!
+    earthquake_feed(place: String): FeatureCollection!
 }
 

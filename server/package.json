@@ -10,7 +10,8 @@
   "dependencies": {
     "apollo-datasource-rest": "^0.4.0",
     "graphql-yoga": "^1.17.4",
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "node-fetch": "^2.5.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.0"

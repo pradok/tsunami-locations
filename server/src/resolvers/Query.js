@@ -1,9 +1,10 @@
-const {geoJsonData} = require('../fixtures');
+const earthquakesApi = require("../api/earthquakes");
 
 const Query = {
   earthquake_feed(_, args, ctx) {
-    return geoJsonData;
-  },
+    const earthquakes = earthquakesApi(args.place);
+    return earthquakes;
+  }
 };
 
 module.exports = Query;
