@@ -1,4 +1,4 @@
-import Form from './Form';
+import Form from './form';
 import LocationsMap from './data';
 
 export {
